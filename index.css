@@ -1,0 +1,229 @@
+html {
+  font-size: 65.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  height: 100%;
+}
+
+* a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+}
+
+* a:hover {
+  color: #ff8000;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5rem 1fr 5rem;
+      grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #203040;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+.header .brand a {
+  color: #ffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .brand ahover {
+  color: #ff8000;
+}
+
+.header .brand button {
+  font-size: 3rem;
+  padding: .5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .header-links a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: #203040;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products li {
+  list-style: none;
+  padding: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 34rem;
+          flex: 0 1 34rem;
+  margin: 1rem;
+  height: 50rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+.products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.products .product-image {
+  max-width: 25rem;
+  max-height: 34rem;
+}
+
+.products .product-name {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.products .product-brand {
+  font-size: 1.2rem;
+  color: #808080;
+}
+
+.products .product-price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.products .product-rating {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateX(-30rem);
+          transform: translateX(-30rem);
+  width: 30rem;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.sidebar.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.sidebar-close-button {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border: .1rem solid #000;
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+}
+
+.sidebar a {
+  font-size: 1.3rem;
+}
+
+/*Product Details*/
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.details-image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 60rem;
+          flex: 2 1 60rem;
+}
+
+.details-image img {
+  max-width: 60rem;
+}
+
+.details-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
+}
+
+.details-action {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
+}
+/*# sourceMappingURL=index.css.map */
