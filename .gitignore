@@ -2,6 +2,8 @@
 /build
 
 dev.js
+.babel
+.env
 
 .DS_Store
 

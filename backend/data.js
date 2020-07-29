@@ -7,7 +7,8 @@ export default {
             price:60,
             brand:'Nike',
             rating:4.5,
-            numReviews:10
+            numReviews:10,
+            countInStock:6
         },
 
         {   _id:'2',
@@ -17,7 +18,8 @@ export default {
             price:57,
             brand:'Nike',
             rating:4.5,
-            numReviews:5
+            numReviews:5,
+            countInStock:4
         },
 
         {   _id:'3',
@@ -27,8 +29,41 @@ export default {
             price:50,
             brand:'Nike',
             rating:3.5,
-            numReviews:10
-        }
+            numReviews:10,
+            countInStock:6,
+        },
 
+        {   _id:'4',
+        name:'Fit pants',
+        category:'Shirts',
+        image:'/images/4.jpg',
+        price:50,
+        brand:'Nike',
+        rating:3.5,
+        numReviews:10,
+        countInStock:7,
+    },
+
+    {   _id:'5',
+    name:'Big shirt',
+    category:'Shirts',
+    image:'/images/5.jpg',
+    price:50,
+    brand:'Nike',
+    rating:3.5,
+    numReviews:10,
+    countInStock:6,
+},
+
+{   _id:'6',
+name:'small shirt',
+category:'Shirts',
+image:'/images/6.jpg',
+price:50,
+brand:'Nike',
+rating:3.5,
+numReviews:10,
+countInStock:6,
+}
     ]
 }
