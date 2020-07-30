@@ -279,3 +279,53 @@ html{
     }
    
 }
+
+/*form*/
+
+.form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3rem;
+
+    &-container{
+        display:flex;
+        flex-direction:column;
+        width:32rem;
+        border:.1rem #c0c0c0 solid;
+        padding:2rem;
+        border-radius: .5rem;
+        list-style: none;
+
+        li{
+            display:flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            margin-top:1rem;
+
+            .link{
+                background-color: #eeee;
+                text-decoration: none;
+                padding: 1rem 1.5rem;
+                border:none;
+                cursor: pointer;
+                color:#000
+            }
+        }
+    }
+
+    input{
+        padding: 1rem ;
+        border:.1rem #c0c0c0 solid;
+        border-radius: .5rem;
+    }
+
+    .button{
+        background-color: #ff8000;
+        padding: 1rem 1.5rem;
+        border:none;
+        cursor: pointer;
+    }
+
+}
